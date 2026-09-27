@@ -145,6 +145,13 @@
             transform: translateY(0);
         }
 
+        .download-grid {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         /* Features grid */
         .features {
             margin: 4rem 0;
@@ -430,8 +437,11 @@
         <section class="hero" id="download">
             <h1 style="margin-bottom: 1.5rem;">READY TO LAUNCH?</h1>
             <p>Get Ponot Client now and level up your Minecraft experience.</p>
-            <a href="Ponot%20Launcher%20Setup.exe" class="cta-button" download>DOWNLOAD SETUP</a>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1.5rem;">Not affiliated with Mojang AB</p>
+            <div class="download-grid">
+                <button class="cta-button" onclick="alert('Download available via Ponot Launcher Setup')">DOWNLOAD SETUP</button>
+                <a href="Ponot's FPS BOOST.mrpack" download="Ponot's FPS BOOST.mrpack" class="cta-button">DOWNLOAD MODPACK</a>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1.5rem;">Modpack requires the Modrinth App (Fabric 1.21.11). Not affiliated with Mojang AB</p>
         </section>
     </div>
 
@@ -439,7 +449,7 @@
         <div class="footer-text" style="font-size: 1.3rem; font-weight: bold; background: linear-gradient(90deg, #b333ff, #ff1aff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">PONOT CLIENT</div>
         <div class="footer-text">Minecraft Enhanced Launcher</div>
         <div style="margin-top: 1rem; font-size: 0.8rem; color: var(--grid-color);">
-            © 2026 Ponot Client. Not affiliated with Mojang AB or Microsoft.
+            © 2024 Ponot Client. Not affiliated with Mojang AB or Microsoft.
         </div>
     </footer>
 </body>
